@@ -1,0 +1,32 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17
+# File: 031-starting-git.txt
+
+
+To get started with git you need a terminal (preferably bash), a user account for the git environment and some brains
+User configuration is set in the global configuration file in $HOME/.gitconfig.
+
+A. How to define in user's configuration file: "name" and "email"
+    git config --global user.name "FirstName LastName"
+    git config --global user.email "user@example.com"
+
+B. How to add couple of aliases to user's configuration file.
+   Define following aliases:
+           b  = branch
+           ci = commit
+           co = checkout
+           cp = cherry-pick
+           st = status --short --branch
+           edit = git commit --amend
+
+
+            branch is a diverging area of github development with unique name and code
+            commmit is the command to prime the changes to be moved into a package that will be eventually pushed into a github repository
+            checkout switches branches or restores working tree files
+            cherry-pick can switch to the correct branch and cherry-pick the commit to where it should belong. in short it can move commits
+            status --short --branch lists shortly file changes and the branch where the file is in
+            git commit --amend The git commit --amend command is a convenient way to modify the most recent commit. 
+            It lets you combine staged changes with the previous commit instead of creating an entirely new commit. It can also be used to simply edit the previous commit message without changing its snapshot. 
+            But, amending does not just alter the most recent commit, it replaces it entirely, meaning the amended commit will be a new entity with its own ref.
+
+# End of file
