@@ -12,4 +12,6 @@ test text for commit
 #6
 #7
 #8
+#9
+#10
 # End of file
