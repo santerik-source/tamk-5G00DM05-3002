@@ -1,0 +1,26 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 061-coalesce-1.txt
+
+Display report for employees in department 30. Display zero
+        for all who do not earn comission Sort the results name
+        (alphabetically) and commission (lowest first).
+
+            deptno  ename    comm
+            ------  -----    ----
+            30      ALLEN    300
+            30      BLAKE    0
+            ...
+
+
+select ename, deptno, coalesce(comm, 0)
+from emp
+where
+deptno = 30
+ORDER BY ename, deptno, comm ASC;
+
+seems to work
+
+
+
+# End of file

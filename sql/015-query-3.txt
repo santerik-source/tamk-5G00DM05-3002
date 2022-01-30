@@ -1,0 +1,26 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17
+# File: 015-query-3.txt
+Create a query to display unique jobs.
+Order alphabetically.
+
+job
+--------
+ANALYST
+CLERK
+MANAGER
+PRESIDENT
+SALESMAN
+
+select
+    job
+from
+    emp
+
+ORDER BY
+    job ASC;
+
+tested, it works
+
+
+# End of file

@@ -25,8 +25,8 @@ B. How to add couple of aliases to user's configuration file.
             checkout switches branches or restores working tree files
             cherry-pick can switch to the correct branch and cherry-pick the commit to where it should belong. in short it can move commits
             status --short --branch lists shortly file changes and the branch where the file is in
-            git commit --amend The git commit --amend command is a convenient way to modify the most recent commit. 
-            It lets you combine staged changes with the previous commit instead of creating an entirely new commit. It can also be used to simply edit the previous commit message without changing its snapshot. 
+            git commit --amend The git commit --amend command is a convenient way to modify the most recent commit.
+            It lets you combine staged changes with the previous commit instead of creating an entirely new commit. It can also be used to simply edit the previous commit message without changing its snapshot.
             But, amending does not just alter the most recent commit, it replaces it entirely, meaning the amended commit will be a new entity with its own ref.
 
 # End of file

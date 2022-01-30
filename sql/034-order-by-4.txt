@@ -1,0 +1,25 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 034-order-by-4.txt
+
+Display the name, salary and calculate new salary and
+        commission for all employees whose commission amount is
+        greater than their salary increased by 10%. Sort the result by
+        employee name (alphabetically), salary (lowest first) and
+        commission (lowest first). Display:
+
+            Employee   Monthly Salary Sal 10% Comm
+            ---------- -------------- ------- ----
+            MARTIN               1250  1375.0 1400
+
+select ename as "Employee", sal as "Monhtly Salary",
+sal * 1.10 as "Sal 10%",
+comm as "Comm"
+from emp
+where
+comm IS NOT NULL
+ORDER BY ename, sal, comm ASC;
+
+seems to work
+
+# End of file

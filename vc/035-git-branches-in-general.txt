@@ -1,0 +1,17 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17
+# File: 035-git-branches-in-general.txt
+
+A. What command shows the branch you're currently on?
+git show-branch --current
+Above is the commands which can show branches
+
+B.
+Create a branch from "master" to "devel". Switch to it. Why
+don't you want to work in master?
+Work in development branch is sandboxed into the development branch, effectively separating the branches. Only when the work is ready
+the work should be pushed into the main to avoid problems. It would be troublesome if a working product would have problems due to maintenance.
+This would happpen if everything happened in the main branch.
+
+
+# End of file

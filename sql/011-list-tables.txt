@@ -1,0 +1,11 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17
+# File: 011-list-tables.txt
+
+What is the command is used to list all tables in database ?
+
+select* from xx.tables
+where the xx is the name of the tables
+
+
+# End of file

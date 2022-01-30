@@ -1,0 +1,17 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 041-like-1.txt
+
+Display the names of all employees where the third letter
+        of their name contains character a. Make the query generic for
+        all names.
+
+
+select ename
+from emp
+where
+ename LIKE "__A%";
+
+seems to work
+
+# End of file

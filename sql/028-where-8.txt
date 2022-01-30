@@ -1,0 +1,17 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 028-where-8.txt
+
+[NULL value handling] Display the employee name, salary,
+        and commission for all employees who earn commissions.
+
+select ename, sal, comm
+from emp
+WHERE
+comm IS NOT NULL;
+
+seems to work
+
+
+
+# End of file

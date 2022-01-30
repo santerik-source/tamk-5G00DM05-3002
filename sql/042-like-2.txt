@@ -1,0 +1,40 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 042-like-2.txt
+
+ Display name and department of every employees who have a
+        *vowel* (aeiouy or in uppercase) at the second character and
+        whose work description includes sales or analysis. Sort the
+        results by the department number (lowest first) and person
+        name (alphabetically). Display:
+
+             Name       Department
+            ---------- ----------
+            KING               10
+            MILLER             10
+            FORD               20
+            JONES              20
+            JAMES              30
+            ...
+             |
+             Look at character 2, which must be a vowel
+
+
+select ename as "Name", deptno as "Department", job
+from emp
+where
+ename LIKE "_A%" OR
+ename LIKE "_E%" OR
+ename LIKE "_I%" OR
+ename LIKE "_O%" OR
+ename LIKE "_U%" OR
+ename LIKE "_Y%"
+AND
+job LIKE "%Sale%" OR
+job LIKE "%ANALYST%"
+ORDER BY deptno, ename ASC;
+
+seems to work
+
+
+# End of file

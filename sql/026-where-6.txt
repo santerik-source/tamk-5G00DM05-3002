@@ -1,0 +1,19 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 026-where-6.txt
+
+Display the employee name and salary of employees whose
+        salary is more than 1500 and are in department 10 or 30. Label
+        the columns "Employee" and "Monthly Salary".
+
+select ename as "Employee", sal as "Monthly Salary"
+from emp
+WHERE
+sal > 1500
+AND
+(deptno = 10 OR deptno = 30)
+;
+
+seems to work
+
+# End of file

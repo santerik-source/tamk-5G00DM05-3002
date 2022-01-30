@@ -1,0 +1,24 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 033-order-by-3.txt
+
+ How much each employee pays taxes in department 10 in a year
+        when tax rate is 31%?. Ignore commission. Sort the result by
+        department number (lowest first) and employee name
+        (alphabetically). Display:
+
+             Dept Employee Taxes
+
+select ename, deptno, sal,
+sal as "Taxes",
+deptno as "Dept",
+ename as "Employee",
+sal * 12 * 0.31
+from emp
+where
+deptno = 10
+ORDER BY deptno, ename ASC;
+
+
+
+# End of file

@@ -1,0 +1,26 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 052-case-2.txt
+
+Every employee in department 30 is entitled to commission as follows:
+        display 100 basic comission for everyone who haven't had it
+        previously and those who already earn commission, get 5%
+        increase. Other departments are not affected. Sort the results
+        by updated commission (lowest first) and name
+        (alphabetically). Display results for all employees:
+
+            ename comm
+            ----- ----
+
+select ename, comm,
+CASE
+    WHEN comm = NULL THEN comm = 100
+    WHEN comm = 0 THEN comm = 100
+    ELSE comm = comm * 1.05
+END
+from emp
+where
+deptno = 30
+ORDER BY ename, comm ASC;
+
+# End of file

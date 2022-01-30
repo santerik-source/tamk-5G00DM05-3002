@@ -1,0 +1,22 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 031-order-by-1.txt
+
+1. Display employee name, salary and new column where each
+        salary is raised by 15%. Display only employees that work
+        under manager blake. Sort the results by "new salary" (lowest
+        first) and employee name (alphabetically).
+
+            ename sal new salary
+
+select ename, sal as "salary",
+sal * 1.15 as "New Salary"
+from emp
+Where mgr = 7698
+ORDER BY sal, ename ASC;
+
+seems to work
+
+
+
+# End of file

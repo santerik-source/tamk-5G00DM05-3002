@@ -1,0 +1,14 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17
+# File: 024-where-4.txt
+
+Display the employee name, job, hiredate between
+        February 20, 1981 and May 1 1981; including the
+        beginning and end dates.
+
+SELECT ename, job, hiredate
+from emp
+WHERE
+hiredate >= '1981-02-20' AND hiredate <= '1981-05-01';
+
+# End of file

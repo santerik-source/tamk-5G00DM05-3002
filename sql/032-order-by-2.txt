@@ -1,0 +1,16 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 032-order-by-2.txt
+
+2. Display employee number, name, department number and hiring
+        date for all employees whose ID number is above 7900
+        or below 7600. Sort the results by the employee
+        number (lowest first)
+
+select empno, ename, deptno, hiredate
+from emp
+where
+empno > 7900 OR empno < 7600
+ORDER BY empno DESC;
+
+# End of file

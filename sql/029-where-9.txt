@@ -1,0 +1,15 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 029-where-9.txt
+
+[NULL value handling] Display the employee name and job for
+        all employees who do not have a manager.
+
+select ename, job, mgr
+FROM emp
+WHERE
+mgr IS NULL;
+
+seems to work
+
+# End of file

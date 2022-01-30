@@ -1,0 +1,30 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 051-case-1.txt
+
+Write a query to change all the SALESMAN job
+        descriptions to SALES PERSON. Order the results by job
+        (alphabetically) and name (alphabetically).
+
+            Name       New Job Name
+            ---------- ------------
+            FORD       ANALYST
+            ..
+            ...
+            WARD       SALES PERSON
+
+
+
+
+select ename as "Name", job as "New Job Name",
+CASE
+    WHEN ename THEN "Name"
+    WHEN job THEN "New Job Name"
+    WHEN "SALESMAN" THEN "SALESPERSON"
+    ELSE job
+END
+from emp
+ORDER BY ename, job ASC;
+
+
+# End of file

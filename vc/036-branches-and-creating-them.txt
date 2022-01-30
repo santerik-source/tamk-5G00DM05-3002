@@ -1,0 +1,20 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17
+# File: 036-branches-and-creating-them.txt
+
+Branch from "devel" to "feature-1", commit to "feature-1" and
+merge changes back to "devel".
+git branch -a to see options
+git checkout branch develop - if development branch is already there
+otherwise git checkout develop and then git checkout branch develop
+git branch -b feature-1 to create the feature-1 branch
+git checkout feature-1 to enter branch
+git add -A
+git commit -m "Test merge"
+git push
+git checkout develop
+git merge feature-1
+
+
+
+# End of file

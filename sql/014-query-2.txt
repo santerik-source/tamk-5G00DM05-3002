@@ -1,0 +1,18 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17a
+# File: 014-query-2.txt
+
+Display name and calculated salaries for all employees for the first quarter of the year.
+Ignore commissions.
+Display:
+ename first quarter -----  -------------
+
+select
+    ename,
+    sal * 3 as "first quarter"
+from
+    emp;
+
+works as intended
+
+# End of file

@@ -1,0 +1,20 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17a
+# File: 013-query-1.txt
+
+Create query to display name,
+job,
+hiring date
+and emplyee number for each employee.
+
+select
+    ename,
+    job,
+    hiredate,
+    empno
+from
+    emp;
+
+works
+
+# End of file

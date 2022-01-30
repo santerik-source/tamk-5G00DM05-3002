@@ -1,11 +1,11 @@
 # Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
 # Date: 2021-11-17
-# File: 031-starting-git.txt
+# File: 032-import-project-to-git.txt
 
 The project starts by creating a file path of one's own liking and then using the chosen folder as a basis "git init" - command is used
 This command creates a git repository inside the folder and after authenticating yourself with your account credentials you push into a repository
 git add -A if all files are wanted to be pushed or singular files with jut git add "*insert filenames here*"
-git commit -m "*insert message here for the push" is used after that 
+git commit -m "*insert message here for the push" is used after that
 with git status you can quickly check if everything is up to date
 git commit push is then used to push this to the repository if everything works correctly
 

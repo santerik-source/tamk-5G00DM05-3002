@@ -1,0 +1,22 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2021-11-17
+# File: 012-correct-sql-statement.txt
+
+There are errors in this statement.Identify them all
+and correct the statement
+and run it.
+SELECT
+    empno,
+    ename salary x 12 ANNUAL SALARY emp;
+
+> > > > > >
+Select
+    empno,
+    ename,
+    sal * 12 as "Annual Salary"
+from
+    emp;
+
+this works, tested and tried
+
+# End of file

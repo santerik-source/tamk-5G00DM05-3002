@@ -1,0 +1,23 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 062-coalesce-2.txt
+
+Display the *total* *net* *income* of each employee per month.
+        The total income is result of salary and comission which both
+        are paid monthly. The salary's tax rate is 31% and comission's
+        tax rate is 20%. Sort the results by the net income (lowest
+        first).
+
+            Name     Net Income Tax
+            -------- ---------- -------
+            SMITH    1600       408
+            JAMES    1900       484
+            ...
+
+select ename as "Name", coalesce(sal, 0), coalesce(comm, 0),
+comm * 0.20 as "Tax",
+sal * 0.69 + "Tax" as "Net Income"
+from emp
+ORDER BY "Net Income"" ASC;
+
+# End of file
