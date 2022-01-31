@@ -1,0 +1,29 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 091-mult-tables 1.txt
+
+Create table for persons (do not insert any data). Last name,
+        first name, phone number (consider international format), post code
+        (zip), city name and street address.
+
+            table: person
+
+            id last first phone zip city address
+            -- ---- ----- ----- --- ---- -------
+
+            Note: suppose phone numbers can contain only "+" and spaces.
+            Exmples: +358 50 12 34 55 66
+
+
+create table person (
+id int,
+last varchar(255),
+first varchar(255),
+phone varchar(255)
+zip varchar(255)
+city varchar(255)
+
+);
+
+
+# End of file

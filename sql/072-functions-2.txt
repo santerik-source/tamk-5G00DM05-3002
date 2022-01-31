@@ -1,0 +1,38 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 072-functions-2.txt
+
+ 7.2 Functions 2
+
+        Write query to display following report for all employees.
+        Pay attention to the _order_ of the displayed rows.
+
+            Name        Characters
+            ----------  ----------
+            ford        4
+            king        4
+            ward        4
+            adams       5
+            allen       5
+            blake       5
+            clark       5
+            james       5
+            jones       5
+            scott       5
+            smith       5
+            martin      6
+            miller      6
+            turner      6
+
+
+select
+ename as "Name",
+LENGTH (ename) "Characters"
+From
+emp
+Order by
+LENGTH (ename) ASC;
+
+seems to work
+
+# End of file

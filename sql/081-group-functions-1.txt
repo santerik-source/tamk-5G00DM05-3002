@@ -1,0 +1,13 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 081-group-functions-1.txt
+
+ Display number of managers, including the president,
+        in the whole company. Label the column "count of mangers".
+
+
+select count (mgr) as "Count of Managers" from emp;
+
+seems to work
+
+# End of file

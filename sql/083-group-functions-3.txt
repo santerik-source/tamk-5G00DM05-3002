@@ -1,0 +1,16 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 083-group-functions-3.txt
+
+
+Display the highest and lowest salaries for employees
+        including departments 10 and 30. Label the columns "high" and "low"
+
+select ename, max(sal) as "High", min(sal) as "low"
+from emp
+where deptno = 10 OR deptno = 30;
+
+seems to work
+
+
+# End of file

@@ -1,0 +1,23 @@
+# Author: Santeri Kivimäki santeri.kivimaki@tuni.fi
+# Date: 2022-1-10
+# File: 073-functions-3.txt
+
+Display the employee number, employee name and "new salary"
+        which is salary increased by 15%. Add column "increase
+        that substracts salary from the "new salary".
+        Round the values to whole numbers. Order the results by name
+        (alphabetically) and "new salary" (lowest first).
+
+            empno  ename new salary increase
+            -----  ----- ---------- --------
+
+select empno, ename,
+ROUND(sal * 1.15) AS "NEW SALARY",
+ROUND(sal * 1.15 - sal) as "Increase"
+from
+emp
+ORDER BY
+sal asc,
+ename;
+
+# End of file
